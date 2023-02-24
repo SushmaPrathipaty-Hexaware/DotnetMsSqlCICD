@@ -6,6 +6,6 @@ EXPOSE 443
 
 
 WORKDIR /app
-COPY build/ .
+COPY publish/ .
 COPY . .
 ENTRYPOINT ["dotnet", "DotnetMsSqlCICD.Api.dll"]
