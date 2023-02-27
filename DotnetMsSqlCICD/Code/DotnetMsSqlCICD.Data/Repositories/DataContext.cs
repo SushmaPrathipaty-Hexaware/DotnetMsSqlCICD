@@ -20,6 +20,8 @@ namespace DotnetMsSqlCICD.Data.Repositories
 
         // Don't delete the below comment.
         // Dbset variables
+		public DbSet<Teacher> Teacher { get; set; }
+		public DbSet<Student> Student { get; set; }
                
 
     }
