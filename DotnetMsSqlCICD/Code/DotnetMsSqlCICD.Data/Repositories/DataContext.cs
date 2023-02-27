@@ -1,3 +1,4 @@
+using DotnetMsSqlCICD.Entities.Entities
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
@@ -20,6 +21,7 @@ namespace DotnetMsSqlCICD.Data.Repositories
 
         // Don't delete the below comment.
         // Dbset variables
+		public DbSet<Employee> Employee { get; set; }
 		public DbSet<Teacher> Teacher { get; set; }
 		public DbSet<Student> Student { get; set; }
                
